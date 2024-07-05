@@ -6,7 +6,7 @@ const Header = props => {
   return (
     <View
       style={{
-        backgroundColor: '#E9967A',
+        backgroundColor: '#FF4500',
         paddingBottom: 30,
         paddingHorizontal: 20,
         borderBottomRightRadius: 7,
@@ -45,7 +45,7 @@ const Header = props => {
             borderRadius: 7,
             elevation: 2,
           }}>
-          <Icon name="search-outline" size={25} color="#E9967A" />
+          <Icon name="search-outline" size={25} color="#FF4500" />
         </TouchableOpacity>
       </View>
     </View>

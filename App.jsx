@@ -26,9 +26,9 @@ const App = () => {
   
   const [pekerjaan, setPekerjaan] = useState([
     {
-      nama: 'FrontAnd Developer',
+      nama: 'FrontAnd Dev',
       image: require('./src/images/insia.png'),
-      namaPerusahaan: 'Kita Kerja',
+      namaPerusahaan: 'SpaceZ',
       new: true,
       category1: 'Web Design',
       category2: 'Illustration',
@@ -37,7 +37,7 @@ const App = () => {
     {
       nama: 'UI/UX Designer',
       image: require('./src/images/insia.png'),
-      namaPerusahaan: 'Kita Kerja',
+      namaPerusahaan: 'SpaceZ',
       new: true,
       category1: 'Web Design',
       category2: 'Illustration',
@@ -46,25 +46,25 @@ const App = () => {
     {
       nama: 'Admin',
       image: require('./src/images/insia.png'),
-      namaPerusahaan: 'Kita Kerja',
+      namaPerusahaan: 'PT Maju Jaya',
       new: true,
-      category1: 'Web Design',
-      category2: 'Illustration',
+      category1: 'Microsoft office',
+      category2: 'Excel',
       gaji: 5000,
     },
     {
       nama: 'Mobile App Dev',
       image: require('./src/images/insia.png'),
-      namaPerusahaan: 'Kita Kerja',
+      namaPerusahaan: 'SpaceZ',
       new: false,
       category1: 'Web Design',
       category2: 'Illustration',
       gaji: 15000,
     },
     {
-      nama: 'Backand Developer',
+      nama: 'Backand Dev',
       image: require('./src/images/insia.png'),
-      namaPerusahaan: 'Kita Kerja',
+      namaPerusahaan: 'SpaceZ',
       new: false,
       category1: 'Web Design',
       category2: 'Illustration',

@@ -6,7 +6,7 @@ const Header = props => {
   return (
     <View
       style={{
-        backgroundColor: '#FF4500',
+        backgroundColor: '#FFD700',
         paddingBottom: 30,
         paddingHorizontal: 20,
         borderBottomRightRadius: 7,
@@ -14,13 +14,13 @@ const Header = props => {
         elevation: 10,
       }}>
       <View style={{marginVertical: 10}}>
-        <Icon name="menu-outline" size={30} color="#FFFFFF" />
+        <Icon name="menu-outline" size={30} color="#1d477b" />
       </View>
 
-      <Text style={{color: '#FFFFFF', fontSize: 18, fontWeight: 'bold'}}>
+      <Text style={{color: '#1d477b', fontSize: 18, fontWeight: 'bold'}}>
         Kita Kerja
       </Text>
-      <Text style={{color: '#FFFFFF'}}>Temukan Pekerjaan Impian</Text>
+      <Text style={{color: '#1d477b'}}>Temukan Pekerjaan Impian</Text>
       <View style={{flexDirection: 'row', marginTop: 20}}>
         <TextInput
           style={{
@@ -45,7 +45,7 @@ const Header = props => {
             borderRadius: 7,
             elevation: 2,
           }}>
-          <Icon name="search-outline" size={25} color="#FF4500" />
+          <Icon name="search-outline" size={25} color="#1d477b" />
         </TouchableOpacity>
       </View>
     </View>

@@ -7,6 +7,7 @@ import {
   StatusBar,
   FlatList,
   Image,
+  Alert,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -22,6 +23,7 @@ const App = () => {
     {nama: 'Copywriter', icon: 'copy'},
   ]);
 
+  
   const [pekerjaan, setPekerjaan] = useState([
     {
       nama: 'FrontAnd Developer',
@@ -76,7 +78,7 @@ const App = () => {
 
   return (
     <View style={{flex: 1}}>
-      <StatusBar barStyle="light-content" backgroundColor={'#FF4500'} />
+      <StatusBar barStyle="light-content" backgroundColor={'#FFD700'} />
       <Header cari={cari} setCari={setCari} />
 
       <View style={{flex: 1, marginHorizontal: 20, marginTop: 10}}>

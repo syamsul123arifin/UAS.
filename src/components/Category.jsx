@@ -1,43 +1,62 @@
-import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity, FlatList} from 'react-native';
+import React from 'react';
+import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const Category = props => {
+const Category = (props) => {
   return (
-    <View>
-      <Text style={{fontWeight: 'bold'}}>Category</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Category</Text>
       <FlatList
         data={props.category}
+        horizontal
         showsHorizontalScrollIndicator={false}
-        renderItem={({item, index}) => (
-          <TouchableOpacity
-            style={{
-              marginHorizontal: 5,
-              backgroundColor: '#FFFFFF',
-              elevation: 2,
-              marginVertical: 10,
-              width: 100,
-              height: 100,
-              borderRadius: 7,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <View
-              style={{
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}>
+        renderItem={({ item }) => (
+          <TouchableOpacity style={styles.categoryItem}>
+            <View style={styles.categoryIconContainer}>
               <Icon name={item.icon} size={35} color="#1d477b" />
             </View>
-            <Text style={{textAlign: 'center', marginTop: 10}}>
-              {item.nama}
-            </Text>
+            <Text style={styles.categoryName}>{item.nama}</Text>
           </TouchableOpacity>
         )}
-        horizontal
+        keyExtractor={(item, index) => index.toString()}
       />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 18,
+    marginBottom: 10,
+  },
+  categoryItem: {
+    width: 120,
+    height: 120,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 10,
+    elevation: 2,
+    marginHorizontal: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
+  },
+  categoryIconContainer: {
+    backgroundColor: '#FFD700',
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  categoryName: {
+    textAlign: 'center',
+  },
+});
 
 export default Category;
